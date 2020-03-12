@@ -3,7 +3,7 @@ package com.amitavkhandelwal.simplestackdemo
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.amitavkhandelwal.simplestackdemo.navigation.FragmentStateChanger
-import com.amitavkhandelwal.simplestackdemo.screens.home.HomeKey
+import com.amitavkhandelwal.simplestackdemo.screens.splash.SplashKey
 import com.zhuinden.simplestack.History
 import com.zhuinden.simplestack.StateChange
 import com.zhuinden.simplestack.StateChanger
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity(), StateChanger {
             .setStateChanger(this)
 //            .setScopedServices(ServiceProvider())
             .setDeferredInitialization(true)
-            .install(this, root, History.of(HomeKey()))
+            .install(this, root, History.of(SplashKey()))
 
         backstackHolder.backstack = backstack // <-- make Backstack globally available through Dagger, singleInstance only!
 
