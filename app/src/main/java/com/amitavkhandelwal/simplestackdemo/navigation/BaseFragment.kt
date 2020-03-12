@@ -18,9 +18,6 @@ open class BaseFragment : Fragment() {
     fun <T : BaseKey> getKey(): T = requireArguments().getParcelable<T>("KEY")!!
 
     @Inject
-    lateinit var sharedPreferences: SharedPreferences
-
-    @Inject
     lateinit var viewModelFactory: ViewModelFactory
 
     override fun onAttach(context: Context) {
