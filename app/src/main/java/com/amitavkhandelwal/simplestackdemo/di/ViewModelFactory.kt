@@ -1,4 +1,4 @@
-package com.careclues.patient.di
+package com.amitavkhandelwal.simplestackdemo.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

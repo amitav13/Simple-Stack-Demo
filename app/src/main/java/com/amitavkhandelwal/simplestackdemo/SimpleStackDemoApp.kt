@@ -3,8 +3,8 @@ package com.amitavkhandelwal.simplestackdemo
 import android.app.Application
 import androidx.appcompat.app.AppCompatActivity
 import com.amitavkhandelwal.simplestackdemo.di.AppComponent
-import com.amitavkhandelwal.simplestackdemo.di.DaggerAppComponent
 import com.amitavkhandelwal.simplestackdemo.di.AppModule
+import com.amitavkhandelwal.simplestackdemo.di.DaggerAppComponent
 
 class SimpleStackDemoApp : Application() {
 

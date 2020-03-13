@@ -1,13 +1,12 @@
 package com.amitavkhandelwal.simplestackdemo.navigation
 
 import android.content.Context
-import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.amitavkhandelwal.simplestackdemo.app
-import com.careclues.patient.di.ViewModelFactory
+import com.amitavkhandelwal.simplestackdemo.di.ViewModelFactory
 import javax.inject.Inject
 
 /**

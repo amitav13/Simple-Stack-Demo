@@ -2,9 +2,9 @@ package com.amitavkhandelwal.simplestackdemo.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.amitavkhandelwal.simplestackdemo.screens.flow.FlowViewModel
 import com.amitavkhandelwal.simplestackdemo.screens.home.HomeViewModel
 import com.amitavkhandelwal.simplestackdemo.screens.splash.SplashViewModel
-import com.careclues.patient.di.ViewModelFactory
 import com.careclues.patient.di.ViewModelKey
 import dagger.Binds
 import dagger.Module
@@ -30,5 +30,10 @@ abstract class ViewModelModule {
     @IntoMap
     @ViewModelKey(HomeViewModel::class)
     abstract fun provideHomeViewModel(viewModel: HomeViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(FlowViewModel::class)
+    abstract fun provideFlowViewModel(viewModel: FlowViewModel): ViewModel
 
 }
